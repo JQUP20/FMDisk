@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>755</width>
+    <height>621</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="ButtonGroup" name="btn_group" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>755</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>755</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <widget class="FileListPage" name="myfiles_page"/>
+    <widget class="ShareListPage" name="sharefile_page"/>
+    <widget class="RankingListPage" name="ranking_page"/>
+    <widget class="TransferPage" name="transfer_page"/>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ButtonGroup</class>
+   <extends>QWidget</extends>
+   <header>CustomWidgets/buttongroup.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FileListPage</class>
+   <extends>QWidget</extends>
+   <header>MainPages/filelistpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ShareListPage</class>
+   <extends>QWidget</extends>
+   <header>MainPages/sharelistpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TransferPage</class>
+   <extends>QWidget</extends>
+   <header>MainPages/transferpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RankingListPage</class>
+   <extends>QWidget</extends>
+   <header>MainPages/rankinglistpage.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
